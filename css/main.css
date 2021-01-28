@@ -13,8 +13,9 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 12px;
   line-height: 1.4;
+	font-family: 'Cabin', sans-serif;
 }
 
 /*
@@ -86,7 +87,85 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*General Styles */
+html {
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	
+}
+body {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	color: #464646;
+	position:relative;
+	overflow-x: hidden;
+	max-width: 100%;
+	margin: 0;
+	
+}
+	
+}
+/*header*/
+.top-section {
+	background-color: #dfe1ed;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.logo {
+	align-items: flex-start;
+	display: block;
+}
+header nav {
+	justify-content: space-around;
+	list-style: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: flex-start;
+	margin-top: 0px;
+}
+header nav ul {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	word-spacing: 10px;list-style-type: none;
+}
+header nav ul li {
+	font-size: 1.125em;
+}
 
+/*middle section*/
+.middle-section{
+	background-color: #afb1ba;
+	padding-bottom: 10px;
+}
+
+.middle-section h1 {
+	height: auto;
+	font-size:  3.5em;
+	color: #464646;
+}
+.middle-section p {
+	height: auto;
+	font-size: 1.5em;
+	color: #464646;
+}
+
+footer {
+	text-align: center;
+	flex-direction: column;
+	background-color: #464c6e;
+	padding: 1px;
+	
+}
+.bottom-section h4, p {
+	color: #dfe1ed;
+}
+/*-----------------Mobile----------------*/
+section {
+	align-content: flex-start;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -178,7 +257,14 @@ textarea {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-
+@media (min-width: 640px){
+	
+}
+	
+@media (min-width: 1024px) {
+	
+}
+	
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
